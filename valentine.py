@@ -10,6 +10,7 @@ import sys
 import time
 
 valentine = '''
+
 ##============================================================================##
 ||                ||  ||   /\\\  ||""|| ||""|| \\\ //                           ||
 ||                ||==||  //=\\\ ||__// ||__//  \\\/                            ||
@@ -23,6 +24,7 @@ valentine = '''
 ||                     ||  ||  //=\\\   \\\/                                    ||
 ||                     ||##// //   \\\  //                                     ||
 ##============================================================================##
+
 '''
 
 
@@ -36,11 +38,11 @@ def valentines():
             os.system("cls")
         time.sleep(0.2)
 
-
-print "Open it in full screen !!(Exit: CTRL+C)"
-time.sleep(3)
-if platform.system() == 'Linux':
-            os.system("clear")
-else:
-    os.system("cls")
-valentines()
+if __name__ == '__main__':
+    print "Open it in full screen !!(Exit: CTRL+C)"
+    time.sleep(2.5)
+    if platform.system() == 'Linux':
+                os.system("clear")
+    else:
+        os.system("cls")
+    valentines()
